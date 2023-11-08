@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hostel Fee Receipt Generator</title>
+<style>
+    h1 {text-align: center;}
+        /* CSS styles (same as before) */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hsl(0, 0%, 94%);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(11, 12, 11, 0.689);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        button {
+            background-color: #0074d9;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hostel Fee Receipt Generator</h1>
+    <center>
+    <form action="generate_receipt.php" method="post">
+        <label for="semester">Select Semester:</label>
+        <select name="semester" id="semester">
+            <option value="semester1">Semester 1</option>
+            <option value="semester2">Semester 2</option>
+	    <option value="semester3">Semester 3</option>
+            <option value="semester4">Semester 4</option>
+	    <option value="semester5">Semester 5</option>
+	    <option value="semester6">Semester 6</option>
+            <option value="semester7">Semester 7</option>
+	    <option value="semester8">Semester 8</option>
+        </select>
+        
+        <button type="submit">Generate Receipt</button>
+    </form>
+</center>
+</body>
+</html>
